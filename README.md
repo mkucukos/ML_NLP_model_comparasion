@@ -1,9 +1,7 @@
-# K-Nearest-Neighbors-K-NN
+# Natural Language Processing
 
-I attempt to predict whether people will purchase SUVs based on their estimated salary and age. I split the data into training and test sets and used the Training set to train the K-Nearest Neighbors(k-NN). The methods of feature scaling and inverse transformation were used.
-
-Accuracy of a confusion matrix :0.93
-
+Here I define what type of review is positive and what type of review is negative? First I split the review into its different words so that I can apply stemming to each of these words with stopwords. Stopwords are the most prevalent and repeated words in any language
+Then, using the CountVectorizer, I created the Bag of Words model, which converts provided text into a vector based on the frequency (count) of each word that appears in the full text. Then I divided the data into training and test sets, and trained the Naive Bayes, K nearest, and SVM classification models using the Training set. For each model, a single prediction was provided as an example. For the Naive Bayes, K nearest, and SVM classification models, the confusion matrix accuracy is 0.72, 0.64, and 0.72, respectively.
 
 ```bash
 $ pip install -r requirement.txt
